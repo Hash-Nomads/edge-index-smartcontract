@@ -1,6 +1,10 @@
 pub mod contract;
+#[cfg(test)]
+mod mock_querier;
 pub mod msg;
 pub mod state;
+
+mod math;
 
 #[cfg(target_arch = "wasm32")]
 mod wasm {
